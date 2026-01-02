@@ -1,0 +1,28 @@
+.wrapper {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+/* Force remove TradingView leftovers */
+:global(.tv-header),
+:global(.tv-side-toolbar),
+:global(.tv-floating-toolbar),
+:global(.tv-chart-view__toolbar),
+:global(.tv-chart-view__pane) {
+  display: none !important;
+}
+
+:global(body),
+:global(.tv-main-panel),
+:global(.chart-page) {
+  background: #000 !important;
+}
