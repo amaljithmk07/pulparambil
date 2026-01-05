@@ -1,14 +1,9 @@
-<svg width="50" height="38" viewBox="0 0 50 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_377_269)">
-<rect x="4" y="4" width="42" height="30" rx="3" fill="white"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M4 24H46V34H4V24Z" fill="#F93939"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M4 4H46V14H4V4Z" fill="#249F58"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M4 34.066V4L18 14V24L4 34.066V34.066Z" fill="#151515"/>
-</g>
-<rect x="2" y="2" width="46" height="34" rx="5" stroke="#111111" stroke-width="4"/>
+<svg width="42" height="30" viewBox="0 0 42 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="42" height="30" rx="4" fill="url(#pattern0_2013_38)"/>
 <defs>
-<clipPath id="clip0_377_269">
-<rect x="4" y="4" width="42" height="30" rx="3" fill="white"/>
-</clipPath>
+<pattern id="pattern0_2013_38" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_2013_38" transform="matrix(0.00449236 0 0 0.00628931 -0.214286 0)"/>
+</pattern>
+<image id="image0_2013_38" width="318" height="159" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAWlBMVEUAAAAAcy7+AAD///8AdS7i+Ov//f/y8vIXaTX+AAX6AwD7AwB+ORYAcCyGEw/5AQT3BRLuAADgiY70AADgi4PwAAyHOSD2ABPblILs/O3akIPdjoTgh4CHDQUKuUGOAAAB30lEQVR4nO3bS3ITQRQFUVni19VAI4wsvvvfJjY7wFkhDfrkDu6JF1GjOhwnNcayrMfLx08Pe+qAr4QvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FLzWVb7zwvdlT0/jWZ75tuTw93HvRTZvKt67Xpw+7airfWM/ff7zdU/P41mWM9fHnaVdN4zuuyzaWx1+n07sdNZVv+8e3p+bxHce2HfG9sueHY9vG+eu9B902fCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfCl8KXwpfKmJXwK3bd3O3+496LbhS+FLTeUb2/n3+101+fqufw77ai7f5fO999y4qXzjiq/wfcH3ar6BD9//hS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+FL4UvhS+Fr/QXo4NtE8WLCcQAAAAASUVORK5CYII="/>
 </defs>
 </svg>

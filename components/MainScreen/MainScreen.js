@@ -116,7 +116,7 @@ const MainScreen = () => {
               <li>
                 <div className={`${styles.flag_icon}`}>
                   <Image
-                    src={"/icons/flag-uae1.svg"}
+                    src={"/icons/flag-uae.svg"}
                     height={100}
                     width={300}
                     alt=""
@@ -264,7 +264,7 @@ const MainScreen = () => {
             </div>
             <div className={`${styles.date_sec}`}>{formattedDate}</div>
 
-            {/* <ul className={`${styles.table_sec}`}>
+            <ul className={`${styles.table_sec}`}>
               <li>
                 <h5>999 TTBAR</h5>
                 <span>60224</span>
@@ -281,9 +281,9 @@ const MainScreen = () => {
                 <h5>9999 GM</h5>
                 <span>516.77</span>
               </li>
-            </ul> */}
+            </ul>
 
-            <TradingViewChart />
+            {/* <TradingViewChart /> */}
           </div>
         </div>
         <div className={styles.news_slider}>
