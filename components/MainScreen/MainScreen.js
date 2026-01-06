@@ -30,6 +30,20 @@ const MainScreen = () => {
     );
   };
 
+  const getMetalName = (metal) => {
+    switch (metal.toLowerCase()) {
+      case "gold":
+        return "GM";
+      case "gold kilobar":
+        return "KGBAR";
+      case "gold ten tola":
+        return "TTBAR";
+      default:
+        return metal.toUpperCase();
+    }
+  };
+
+
   const formatTime = (date) => {
     const hours = date.getHours();
     const minutes = date.getMinutes();
@@ -52,6 +66,7 @@ const MainScreen = () => {
           fetchSpotRates(adminId),
           fetchServerURL(),
           fetchNews(adminId),
+
         ]);
 
         setCommodities(spotRatesRes.data.info.commodities);
@@ -103,6 +118,8 @@ const MainScreen = () => {
     month: "long",
     day: "numeric",
   });
+
+
   return (
     <div className={styles.mainscreen_Section}>
       <div className={`${styles.main_lines}`}>
@@ -265,9 +282,44 @@ const MainScreen = () => {
             <div className={`${styles.date_sec}`}>{formattedDate}</div>
 
             <ul className={`${styles.table_sec}`}>
+              {commodities.map((item, index) => {
+                const metalName = getMetalName(item.metal.toLowerCase());
+                const bid = marketData?.Gold?.bid;
+                const ask = marketData?.Gold?.offer;
+                const unitMultiplier = {
+                  GM: 1,
+                  KGBAR: 1000,
+                  TTBAR: 116.64,
+                }[metalName];
+
+                const purity = Number(item.purity);
+
+
+                const purityPower = purity / Math.pow(10, purity.toString().length);
+
+                const bidPrice =
+                  ((bid / 31.103) * 3.674) *
+                  unitMultiplier * purityPower;
+
+                const askPrice =
+                  ((ask / 31.103) * 3.674) *
+                  unitMultiplier * purityPower;
+
+                return (
+
+                  <li
+                    key={index}
+                  >
+                    <h5>{item.purity} {metalName}                    </h5>
+                    <span>{bidPrice.toFixed(2)}</span>
+                  </li>
+                );
+              })}
+            </ul>
+            {/* <ul className={`${styles.table_sec}`}>
               <li>
                 <h5>999 TTBAR</h5>
-                <span>60224</span>
+                <span>{bidPrice}</span>
               </li>
               <li>
                 <h5>995 KGBAR</h5>
@@ -281,7 +333,7 @@ const MainScreen = () => {
                 <h5>9999 GM</h5>
                 <span>516.77</span>
               </li>
-            </ul>
+            </ul> */}
 
             {/* <TradingViewChart /> */}
           </div>
